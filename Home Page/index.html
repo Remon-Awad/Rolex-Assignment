@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css -->
+    <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="nav container flex">
+            <a href="#home" class="logo-content flex">
+                <i class='bx bx-crown bx-flip-horizontal logo-icon'></i>
+                <span class="logo-text">ROLEX</span>
+            </a>
+
+            <div class="menu-content">
+                <ul class="menu-list flex">
+                    <li><a href="#home" class="nav-link action-navlink">HOME</a></li>
+                    <li><a href="#collection" class="nav-link">COLLECTION</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                </ul>
+
+                <i class='bx bx-x navClose-btn' role="button" aria-label="Close menu"></i>
+            </div>
+
+            <div class="contact-content flex">
+                <a href="#" class="search-link" aria-label="Search"><i class='bx bx-search sreach-icon'></i></a>
+                <a href="#" aria-label="Account"><i class='bx bx-user user-icon'></i></a>
+                <a href="#" class="cart-link" aria-label="Cart"><i class='bx bx-cart-alt cart-icon'></i><span class="cart-count" aria-live="polite">0</span></a>
+            </div>
+            <i class='bx bx-menu navOpen' role="button" aria-label="Open menu"></i>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- home -->
+        <section class="section home" id="home">
+            <div class="contant">
+                <h1>TIMELESS PRECISION</h1>
+                <p>CRAFTED WITH PURPOSE. <br>
+                    DESIGNED TO ENDURE.</p>
+                <div class="contant-but">
+                    <a href="#collection" class="top-but">EXPLORE NOW</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- collection -->
+        <section class="container py-5" id="collection">
+            <h2 class="text-center mb-5">Our Watches</h2>
+
+            <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm" data-id="watch-01" data-ref="RX-101" data-case="40 mm x 11.5 mm, stainless steel" data-movement="Automatic, 21 jewels" data-power="40 h reserve" data-crystal="Hardened mineral" data-water="50 m" data-strap="Black leather, 20 mm"
+                 data-long="An automatic watch with a dark, understated character. It winds with the motion of your wrist, so there is no battery to replace, and its slim profile sits as well under a cuff as it does on a weekend.">
+                <img src="../images/imgcoloc12.jpeg" class="card-img-top" alt="Royal Black">
+                <div class="card-body">
+                    <h5 class="card-title">Royal Black</h5>
+                    <p class="card-text">Premium automatic watch with a luxury design.</p>
+                    <h6 class="mb-3">$200</h6>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-gold view-details">View Details</a>
+                        <a href="#" class="btn btn-gold add-to-cart">Add to Cart</a>
+                        <button class="wishlist" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm" data-id="watch-02" data-ref="RX-102" data-case="42 mm x 13.5 mm, stainless steel" data-movement="Automatic chronograph, 27 jewels" data-power="48 h reserve" data-crystal="Sapphire" data-water="100 m" data-strap="Steel bracelet, 22 mm"
+                 data-long="The flagship of the Chrono line. A scratch-resistant sapphire crystal, a 100 m water rating and pushers with a firm, precise click make it a chronograph you can time a lap with and still wear to dinner.">
+                <img src="../images/imgcoloc3.jpeg" class="card-img-top" alt="Chrono Meridian">
+                <div class="card-body">
+                    <h5 class="card-title">Chrono Meridian</h5>
+                    <p class="card-text">Flagship chronograph with a sapphire crystal and 100 m water resistance.</p>
+                    <h6 class="mb-3">$350</h6>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-gold view-details">View Details</a>
+                        <a href="#" class="btn btn-gold add-to-cart">Add to Cart</a>
+                        <button class="wishlist" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm" data-id="watch-03" data-ref="RX-103" data-case="41 mm x 12 mm, stainless steel" data-movement="Automatic chronograph, 25 jewels" data-power="46 h reserve" data-crystal="Sapphire" data-water="100 m" data-strap="Leather, 20 mm"
+                 data-long="A chronograph built around comfort. A slim 12 mm profile and curved lugs keep it close to the wrist, and the sapphire crystal stays clear through years of daily wear.">
+                <img src="../images/imgcoloc4.jpeg" class="card-img-top" alt="Chrono Vanguard">
+                <div class="card-body">
+                    <h5 class="card-title">Chrono Vanguard</h5>
+                    <p class="card-text">Slim, comfortable chronograph with curved lugs and a sapphire crystal.</p>
+                    <h6 class="mb-3">$320</h6>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-gold view-details">View Details</a>
+                        <a href="#" class="btn btn-gold add-to-cart">Add to Cart</a>
+                        <button class="wishlist" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm" data-id="watch-04" data-ref="RX-104" data-dial="White with black sub-dials" data-bezel="Black, tachymeter scale" data-case="40 mm x 12.5 mm, stainless steel" data-movement="Automatic chronograph, 27 jewels" data-power="48 h reserve" data-crystal="Sapphire" data-water="100 m" data-strap="Stainless steel bracelet, 20 mm"
+                 data-long="A three-register chronograph with a white dial, black sub-dials and a black bezel with a tachymeter scale. The steel bracelet, with polished and brushed links, gives it a sporty look that still dresses up.">
+                <img src="../images/imgcoloc5.jpeg" class="card-img-top" alt="Chrono Panda">
+                <div class="card-body">
+                    <h5 class="card-title">Chrono Panda</h5>
+                    <p class="card-text">White dial, black sub-dials and a black tachymeter bezel on a steel bracelet.</p>
+                    <h6 class="mb-3">$300</h6>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-gold view-details">View Details</a>
+                        <a href="#" class="btn btn-gold add-to-cart">Add to Cart</a>
+                        <button class="wishlist" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm" data-id="watch-05" data-ref="RX-105" data-case="38 mm x 11 mm, stainless steel" data-movement="Quartz chronograph" data-power="Battery, about 3 years" data-crystal="Hardened mineral" data-water="50 m" data-strap="Rubber, 20 mm"
+                 data-long="A compact chronograph for smaller wrists. The lighter 38 mm case and quartz movement keep it easy to wear all day, with no winding and a battery that lasts around three years.">
+                <img src="../images/imgcoloc11.jpeg" class="card-img-top" alt="Chrono Compact">
+                <div class="card-body">
+                    <h5 class="card-title">Chrono Compact</h5>
+                    <p class="card-text">Compact quartz chronograph in a lightweight case.</p>
+                    <h6 class="mb-3">$200</h6>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-gold view-details">View Details</a>
+                        <a href="#" class="btn btn-gold add-to-cart">Add to Cart</a>
+                        <button class="wishlist" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm" data-id="watch-06" data-ref="RX-106" data-case="44 mm x 14 mm, stainless steel" data-movement="Automatic chronograph, 27 jewels" data-power="50 h reserve" data-crystal="Sapphire" data-water="100 m" data-strap="Steel bracelet, 22 mm"
+                 data-long="A large-case chronograph for people who like a watch with presence. The 44 mm case gives the sub-dials room to breathe, and the sapphire crystal and 100 m rating keep it ready for anything.">
+                <img src="../images/imgcoloc7.jpeg" class="card-img-top" alt="Chrono Regent">
+                <div class="card-body">
+                    <h5 class="card-title">Chrono Regent</h5>
+                    <p class="card-text">Large-case automatic chronograph with real wrist presence.</p>
+                    <h6 class="mb-3">$340</h6>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-gold view-details">View Details</a>
+                        <a href="#" class="btn btn-gold add-to-cart">Add to Cart</a>
+                        <button class="wishlist" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm" data-id="watch-07" data-ref="RX-107" data-case="41 mm x 12.5 mm, stainless steel" data-movement="Automatic chronograph, 25 jewels" data-power="46 h reserve" data-crystal="Sapphire-coated mineral" data-water="100 m" data-strap="Leather, 20 mm"
+                 data-long="A chronograph in a restrained style, designed to pair with almost anything in your wardrobe. A 41 mm case, sapphire-coated crystal and a leather strap make it an easy everyday pick.">
+                <img src="../images/imgcoloc8.jpeg" class="card-img-top" alt="Chrono Sovereign">
+                <div class="card-body">
+                    <h5 class="card-title">Chrono Sovereign</h5>
+                    <p class="card-text">Restrained automatic chronograph that pairs with everything.</p>
+                    <h6 class="mb-3">$290</h6>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-gold view-details">View Details</a>
+                        <a href="#" class="btn btn-gold add-to-cart">Add to Cart</a>
+                        <button class="wishlist" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm" data-id="watch-08" data-ref="RX-108" data-case="40 mm x 11.5 mm, stainless steel" data-movement="Quartz chronograph" data-power="Battery, about 3 years" data-crystal="Hardened mineral" data-water="50 m" data-strap="Rubber, 20 mm"
+                 data-long="The starting point of the Chrono line: the same clean chronograph layout with a dependable quartz movement, at the most approachable price.">
+                <img src="../images/imgcoloc9.jpeg" class="card-img-top" alt="Chrono Origin">
+                <div class="card-body">
+                    <h5 class="card-title">Chrono Origin</h5>
+                    <p class="card-text">The entry to the Chrono line: quartz precision at an easy price.</p>
+                    <h6 class="mb-3">$200</h6>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-gold view-details">View Details</a>
+                        <a href="#" class="btn btn-gold add-to-cart">Add to Cart</a>
+                        <button class="wishlist" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm" data-id="watch-09" data-ref="RX-109" data-case="39 mm x 11 mm, gold-tone stainless steel" data-movement="Automatic, 24 jewels" data-power="42 h reserve" data-crystal="Sapphire" data-water="50 m" data-strap="Black leather, 20 mm"
+                 data-long="A watch made for the evening. Warm gold tones and an automatic movement give it a sophisticated, timeless look that dresses up any outfit.">
+                <img src="../images/imgcoloc10.jpeg" class="card-img-top" alt="Midnight Gold">
+                <div class="card-body">
+                    <h5 class="card-title">Midnight Gold</h5>
+                    <p class="card-text">A sophisticated watch for a timeless appearance.</p>
+                    <h6 class="mb-3">$300</h6>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-gold view-details">View Details</a>
+                        <a href="#" class="btn btn-gold add-to-cart">Add to Cart</a>
+                        <button class="wishlist" onclick="toggleWishlist(this)" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="section about" id="about" style="color: black;">
+            <h1 class="heading-about"><span>ABOUT</span> ROLEX</h1>
+            <div class="row">
+                <div class="image">
+                    <img src="../images/imgaboutt.jpeg" alt="Close-up of a watch">
+                </div>
+                <div class="contant">
+                    <h3>Precision you can wear every day</h3>
+                    <p>Every watch in our collection starts with one question: will it still feel right in twenty years? We choose durable materials, pay close attention to every case, dial and clasp, and check each movement before it leaves us.</p>
+                    <p>Our designs stay quiet on purpose. Clean dials, balanced proportions and finishes that age well make a watch look as natural with a suit as it does on a weekend.</p>
+
+                    <ul class="about-values">
+                        <li>
+                            <strong>Precision</strong>
+                            <span>Movements checked for accurate, reliable timekeeping.</span>
+                        </li>
+                        <li>
+                            <strong>Craftsmanship</strong>
+                            <span>Details finished with care, from the bezel to the clasp.</span>
+                        </li>
+                        <li>
+                            <strong>Endurance</strong>
+                            <span>Materials chosen to handle daily wear for years, not seasons.</span>
+                        </li>
+                    </ul>
+
+                    <a href="#collection" class="btn btn-gold">Explore the collection</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <section class="section footer" id="footer">
+        </section>
+    </main>
+
+    <!-- cart drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+        <div class="cart-head">
+            <h2 id="cartTitle">Your cart</h2>
+            <button type="button" class="cart-close" aria-label="Close cart"><i class='bx bx-x'></i></button>
+        </div>
+
+        <div class="cart-body" id="cartItems"></div>
+
+        <div class="cart-foot">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">$0</strong>
+            </div>
+            <button type="button" class="btn btn-gold cart-checkout" disabled>Checkout</button>
+        </div>
+    </aside>
+
+    <!-- checkout -->
+    <div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Checkout" aria-hidden="true">
+        <div class="checkout-panel">
+            <button type="button" class="checkout-close" aria-label="Close checkout"><i class='bx bx-x'></i></button>
+
+            <div class="checkout-form-view" id="checkoutFormView">
+                <form class="checkout-form" id="checkoutForm">
+                    <h2>Checkout</h2>
+                    <p class="checkout-note">This is a demo store: no payment is taken and your details are not sent anywhere.</p>
+
+                    <div class="field">
+                        <label for="co-name">Full name</label>
+                        <input id="co-name" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="co-email">Email</label>
+                        <input id="co-email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="co-phone">Phone</label>
+                        <input id="co-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9+\s\(\)\-]{7,}" title="Enter a valid phone number" required>
+                    </div>
+                    <div class="field">
+                        <label for="co-address">Address</label>
+                        <input id="co-address" name="address" type="text" autocomplete="street-address" required>
+                    </div>
+                    <div class="field">
+                        <label for="co-city">City</label>
+                        <input id="co-city" name="city" type="text" autocomplete="address-level2" required>
+                    </div>
+                    <div class="field">
+                        <label for="co-notes">Notes (optional)</label>
+                        <textarea id="co-notes" name="notes" rows="2"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold checkout-submit">Place order</button>
+                </form>
+
+                <div class="checkout-summary">
+                    <h3>Order summary</h3>
+                    <div id="checkoutSummary"></div>
+                    <div class="cart-total">
+                        <span>Total</span>
+                        <strong id="checkoutTotal">$0</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout-done" id="checkoutDone" hidden>
+                <i class='bx bx-check-circle'></i>
+                <h2 id="doneTitle">Thank you</h2>
+                <p id="doneOrder"></p>
+                <p class="checkout-note">This is a demo store, so nothing was charged or sent.</p>
+                <button type="button" class="btn btn-gold checkout-continue">Continue shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- product details -->
+    <div class="details-modal" id="detailsModal" role="dialog" aria-modal="true" aria-label="Product details" aria-hidden="true">
+        <div class="details-panel">
+            <button type="button" class="details-close" aria-label="Close details"><i class='bx bx-x'></i></button>
+
+            <div class="details-media">
+                <img id="detailsImg" src="" alt="">
+            </div>
+
+            <div class="details-info">
+                <p class="details-ref" id="detailsRef"></p>
+                <h2 id="detailsName"></h2>
+                <p class="details-price" id="detailsPrice"></p>
+                <p class="details-desc" id="detailsDesc"></p>
+                <dl class="details-specs" id="detailsSpecs"></dl>
+
+                <div class="details-actions">
+                    <button type="button" class="btn btn-gold details-add">Add to Cart</button>
+                    <button type="button" class="wishlist details-wish" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="details-nav">
+                    <button type="button" class="details-prev" aria-label="Previous watch"><i class='bx bx-chevron-left'></i></button>
+                    <span id="detailsCount"></span>
+                    <button type="button" class="details-next" aria-label="Next watch"><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- search -->
+    <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Search watches" aria-hidden="true">
+        <div class="search-panel">
+            <div class="search-bar">
+                <i class='bx bx-search'></i>
+                <input type="search" id="searchInput" placeholder="Search by name, reference or feature" autocomplete="off" aria-label="Search watches">
+                <button type="button" class="search-close" aria-label="Close search"><i class='bx bx-x'></i></button>
+            </div>
+            <div class="search-results" id="searchResults" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
